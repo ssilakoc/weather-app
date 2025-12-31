@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyCast - Hava Durumu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="clear"> <div class="container">
+        <header>
+            <div class="search-box">
+                <input type="text" id="city-input" placeholder="Şehir ara..." autocomplete="off">
+                <button id="search-btn">🔍</button>
+            </div>
+            <button id="location-btn">📍 Konumum</button>
+        </header>
+
+        <main id="weather-card" class="glass hidden">
+            <div class="main-info">
+                <h2 id="city-name">İstanbul</h2>
+                <p id="date">31 Aralık Çarşamba</p>
+                <img id="weather-icon" src="" alt="Hava Durumu">
+                <h1 id="temp">22°C</h1>
+                <p id="description">Parçalı Bulutlu</p>
+            </div>
+
+            <div class="details">
+                <div class="col">
+                    <p>Nem</p>
+                    <span id="humidity">%45</span>
+                </div>
+                <div class="col">
+                    <p>Rüzgar</p>
+                    <span id="wind">12 km/s</span>
+                </div>
+            </div>
+        </main>
+
+<p id="forecast-title" class="hidden" style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.8; color: #000;">5 Günlük Tahmin</p>
+<section id="forecast" class="forecast-container hidden"></section>
+
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
